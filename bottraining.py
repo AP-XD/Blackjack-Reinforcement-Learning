@@ -9,11 +9,11 @@ def TrainAndTestGameBot (trainingIteration, testingIteration, method, deckConten
     #check input parameter robustness
     if (initialNumberOfCard * 10 > winningPoints):
         print("initial card points can exceed the winning points, not allowed")
-        sys.exit()
+        sys.exit();
 
     if (initialNumberOfCard < 1):
         print("initial number of card shall be equal ot greater than one")
-        sys.exit()
+        sys.exit();
 
     if (dealerCriticalPointsToStick > winningPoints):
         print("dealer will hit until bust")
@@ -21,7 +21,7 @@ def TrainAndTestGameBot (trainingIteration, testingIteration, method, deckConten
 
     # when player combats with dealer after the training phase,
     # this list stores the result [#win, #draw, #lose]
-    testResult = [0, 0, 0]
+    testResult = [0, 0, 0];
 
     # dictionary: key = playerCardPoints, dealerFirstCardPoint, usableAce (no usable=0, has usable=1), action (hit=0, stick=1), value = Q function
     # this dict is the Q-table, stores rthe Q value for all combinations of states and actions

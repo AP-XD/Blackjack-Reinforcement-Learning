@@ -10,8 +10,8 @@ class GamePlay:
         self.dealerCards = []
         self.playerCardPoints = 0
         self.dealerCardPoints = 0
-        self.playerCardUsableAce = 0
-        self.dealerFirstCardPoint = 0
+        self.playerCardUsableAce = 0;
+        self.dealerFirstCardPoint = 0;
 
         # describe what cards are contained in the deck
         self.deckContent = deckContent[:]
